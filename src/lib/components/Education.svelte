@@ -1,5 +1,5 @@
 <script>
-	import { educationDetails } from '$lib/constants/data';
+	import educationDetails from '../data/education.json';
 </script>
 
 <section class="mx-auto max-w-3xl rounded-lg text-white shadow-lg">

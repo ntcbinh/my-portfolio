@@ -1,0 +1,25 @@
+[
+	{
+		"dateRange": "9/2014 - 12/2018",
+		"title": "Control Engineering and Automation",
+		"institution": "Can Tho University",
+		"gpa": "2.92/4",
+		"gpaLabel": "GPA:",
+		"gpaColor": "white",
+		"dateClass": "bg-highlightPrimary",
+		"titleClass": "text-highlightPrimary",
+		"gpaClass": "text-gray-400"
+	},
+	{
+		"dateRange": "7/2017",
+		"title": "Japanese Language Proficiency Test N5",
+		"dateClass": "bg-yellow-600",
+		"titleClass": "text-yellow-600"
+	},
+	{
+		"dateRange": "12/2021",
+		"title": "Japanese Language Proficiency Test N3",
+		"dateClass": "bg-yellow-600",
+		"titleClass": "text-yellow-600"
+	}
+]

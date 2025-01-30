@@ -1,0 +1,22 @@
+[
+	{
+		"icon": "📷",
+		"title": "Photography",
+		"description": "Capturing moments through the lens allows me to express creativity and appreciate the beauty in everyday life."
+	},
+	{
+		"icon": "🌍",
+		"title": "Traveling",
+		"description": "Exploring new places, meeting people, and immersing myself in different cultures fuel my curiosity and keep life exciting."
+	},
+	{
+		"icon": "✍️",
+		"title": "Creative Lettering",
+		"description": "I enjoy experimenting with artistic lettering and calligraphy, turning words into visually expressive art."
+	},
+	{
+		"icon": "🪴",
+		"title": "Succulent Gardening",
+		"description": "Growing and caring for succulents brings me a sense of tranquility and appreciation for nature’s resilience."
+	}
+]

@@ -1,5 +1,5 @@
 <script>
-	import { fulfillmentMessage, hobbies } from '$lib/constants/data';
+	import hobbies from '../data/hobbies.json';
 </script>
 
 <section>
@@ -19,5 +19,9 @@
 		{/each}
 	</ul>
 
-	<p class="mt-4 italic">{fulfillmentMessage}</p>
+	<p class="mt-4 italic">
+		But above all, I find the greatest fulfillment in helping others. Whether it's solving a
+		technical challenge, offering guidance, or simply being there to listen, making a positive
+		impact gives me a deep sense of purpose.
+	</p>
 </section>

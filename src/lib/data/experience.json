@@ -1,0 +1,100 @@
+[
+	{
+		"title": "Senior Frontend Engineer",
+		"company": "Sungrove Tech Vietnam",
+		"duration": "2024/2 - Present",
+		"teamSize": 20,
+		"category": "Frontend",
+		"responsibilities": ["Coding", "Writing Unit test code", "Review source code"],
+		"technologies": ["Svelte", "TypeScript", "Docker", "TailwindCSS"],
+		"tools": ["Backlog", "VSCode", "Bitbucket", "Jira"]
+	},
+	{
+		"title": "Developer",
+		"company": "I-enter Asia",
+		"duration": "4/2023 - 1/2024",
+		"teamSize": 5,
+		"category": "Full-Stack",
+		"responsibilities": ["Coding", "Writing Unit test code", "Review source code"],
+		"technologies": ["VueJS", "Laravel10", "TypeScript", "MySQL", "Docker"],
+		"tools": ["Backlog", "VSCode", "Redmine", "Docker", "MySQL Workbench"]
+	},
+	{
+		"title": "IT Developer",
+		"company": "Techbase Vietnam",
+		"duration": "6/2022 - 3/2023",
+		"teamSize": 12,
+		"category": "Full-Stack",
+		"responsibilities": [
+			"Coding",
+			"Writing test cases",
+			"Reviewing source code",
+			"Agile Scrum",
+			"Microservices"
+		],
+		"technologies": ["NodeJS", "NestJS", "VueJS", "NuxtJS", "Java", "Docker"],
+		"tools": ["Git", "Figma", "JIRA", "Confluence"]
+	},
+	{
+		"title": "Software Engineer",
+		"company": "YC Solutions Co., Ltd",
+		"duration": "8/2020 - 5/2022",
+		"teamSize": 8,
+		"category": "Full-Stack",
+		"projects": ["Human resource management system", "ERP system"],
+		"responsibilities": [
+			"Read the requirement in Japanese",
+			"Coding UI",
+			"Write a test case for the system UI and write unit test",
+			"Coding API for server-side and write unit test",
+			"Working with Agile Scrum",
+			"Working with Micro services",
+			"Support communication between dev team & Japan client (Read & Write message)"
+		],
+		"technologies": [
+			"NodeJS",
+			"VueJS",
+			"NuxtJS",
+			"ReactJS",
+			"NextJS",
+			"PostgreSQL",
+			"Docker",
+			"Firebase"
+		],
+		"tools": ["Git", "Figma", "Linear"],
+		"workingProcess": [
+			"Basic design",
+			"Detail Design",
+			"Create & execute Manual Test",
+			"Coding",
+			"Unit test Coding"
+		]
+	},
+	{
+		"title": "Software Development Engineer (Winform Application)",
+		"company": "System Gear Vietnam Co., Ltd",
+		"duration": "1/2019 - 7/2020",
+		"teamSize": 4,
+		"category": "Full-Stack",
+		"projects": ["Transportation system", "Warehouse management system"],
+		"responsibilities": [
+			"Creating basic, detail design, test case in Japanese",
+			"Writing Q&A in Japanese",
+			"Coding winform application in Visual Basic 6",
+			"Unit testing",
+			"Function testing",
+			"Creating User Manual for Winform Application",
+			"Support PM to train new members",
+			"Working with Waterfall process"
+		],
+		"technologies": ["VB6", "SQL Server"],
+		"workingProcess": [
+			"Basic design",
+			"Detail Design",
+			"Create & execute Manual Test",
+			"Coding",
+			"Setup"
+		],
+		"tools": ["VSCode", "SQL Server", "WinMerge"]
+	}
+]

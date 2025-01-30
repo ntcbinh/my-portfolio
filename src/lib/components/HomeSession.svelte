@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { getRandomIcon } from '$lib';
-	import { iconSKills, PERSONAL_INFO } from '$lib/constants/data';
+	import { iconSKills } from '$lib/constants/data';
+	import PERSONAL_INFO from '../data/personal-info.json';
 	import { onMount, onDestroy } from 'svelte';
 	import { CalendarDaysIcon } from 'heroicons-svelte/24/solid';
 	import { smoothScroll } from '$lib/utils/dom-process';
