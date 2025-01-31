@@ -33,17 +33,17 @@
 >
 	<!-- Intro -->
 	<div class="relative w-full pt-12 lg:w-[60%] lg:pt-0">
-		<p class="text-[1.5rem] font-[500] text-disableColor dark:text-darkDisableColor">
+		<p class="text-[1.5rem] font-[500] text-darkDisableColor">
 			Hi, I'm {PERSONAL_INFO.NAME}
 		</p>
 
 		<h1
-			class="overflow-hidden text-[2.5rem] font-[700] leading-[45px] text-textColor sm:text-[3rem] sm:leading-[60px] dark:text-darkTextColor"
+			class="overflow-hidden text-[2.5rem] font-[700] leading-[45px] text-darkTextColor sm:text-[3rem] sm:leading-[60px]"
 		>
 			{PERSONAL_INFO.TITLE}
 		</h1>
 
-		<p class="mt-2 w-full text-[1rem] text-disableColor sm:w-[70%] dark:text-darkDisableColor">
+		<p class="mt-2 w-full text-[1rem] text-darkDisableColor sm:w-[70%]">
 			{PERSONAL_INFO.DESCRIPTION}
 		</p>
 		<div class="mt-8 flex flex-col gap-[15px] sm:flex-row sm:items-center">
@@ -66,34 +66,32 @@
 		class="relative flex w-[80%] flex-col items-end sm:w-[90%] sm:items-center lg:w-[40%] lg:items-end"
 	>
 		<div
-			class="absolute -left-10 top-10 flex w-max animate-pulse flex-col items-center justify-center rounded-full bg-white px-4 py-1 shadow-sm transition-all duration-300 sm:top-[50px] sm:px-8 sm:py-2.5 md:left-8 dark:bg-slate-900"
+			class="absolute -left-10 top-10 flex w-max animate-pulse flex-col items-center justify-center rounded-full bg-slate-900 px-4 py-1 shadow-sm transition-all duration-300 sm:top-[50px] sm:px-8 sm:py-2.5 md:left-8"
 		>
 			<h6 class="text-[1.2rem] font-[600] leading-[35px] text-highlightPrimary sm:text-[1.8rem]">
 				BE
 			</h6>
-			<p class="text-[0.7rem] text-disableColor sm:text-[0.9rem] dark:text-darkDisableColor">
+			<p class="text-[0.7rem] text-darkDisableColor sm:text-[0.9rem]">
 				{PERSONAL_INFO.TECH.BE}
 			</p>
 		</div>
 		<div
-			class="absolute -right-14 -top-8 flex h-fit w-max animate-bounce flex-col items-center justify-center rounded-full bg-white px-4 py-1 shadow-sm transition-all duration-300 sm:bottom-[220px] sm:px-8 sm:py-2.5 lg:right-80 lg:top-52 lg:animate-pulse dark:bg-slate-900"
+			class="absolute -right-14 -top-8 flex h-fit w-max animate-bounce flex-col items-center justify-center rounded-full bg-slate-900 px-4 py-1 shadow-sm transition-all duration-300 sm:bottom-[220px] sm:px-8 sm:py-2.5 lg:right-80 lg:top-52 lg:animate-pulse"
 		>
 			<h6 class="text-[1.2rem] font-[600] leading-[35px] text-highlightPrimary sm:text-[1.8rem]">
 				FE
 			</h6>
-			<p class="text-[0.7rem] text-disableColor sm:text-[0.9rem] dark:text-darkDisableColor">
+			<p class="text-[0.7rem] text-darkDisableColor sm:text-[0.9rem]">
 				{PERSONAL_INFO.TECH.FE}
 			</p>
 		</div>
 		<div
-			class="absolute -left-[15%] bottom-[20px] flex w-max animate-bounce flex-col items-center justify-center rounded-full bg-white px-4 py-1 shadow-sm transition-all duration-300 sm:bottom-[50px] sm:animate-pulse sm:px-8 sm:py-2.5 md:left-8 dark:bg-slate-900"
+			class="absolute -left-[15%] bottom-[20px] flex w-max animate-bounce flex-col items-center justify-center rounded-full bg-slate-900 px-4 py-1 shadow-sm transition-all duration-300 sm:bottom-[50px] sm:animate-pulse sm:px-8 sm:py-2.5 md:left-8"
 		>
 			<h6 class="text-[1.2rem] font-[600] leading-[35px] text-highlightColor sm:text-[1.8rem]">
 				{PERSONAL_INFO.NUM_OF_YEAR_EXPERIENCE}+
 			</h6>
-			<p class="text-[0.7rem] text-disableColor sm:text-[0.9rem] dark:text-darkDisableColor">
-				Years of experience
-			</p>
+			<p class="text-[0.7rem] text-darkDisableColor sm:text-[0.9rem]">Years of experience</p>
 		</div>
 
 		<img

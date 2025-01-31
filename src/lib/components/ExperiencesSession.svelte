@@ -20,7 +20,6 @@
 		<div class="mt-1 h-1 w-3/4 rounded-full bg-highlightColor"></div>
 	</div>
 
-	<!-- Filters -->
 	<div class="mb-10 flex justify-center space-x-4">
 		{#each categories as category}
 			<button
@@ -34,11 +33,9 @@
 		{/each}
 	</div>
 
-	<!-- Timeline -->
 	<div class="relative mx-auto max-w-6xl">
-		<!-- Vertical Line -->
 		<div
-			class="absolute left-1/2 h-full w-1 -translate-x-1/2 transform rounded-lg bg-gradient-to-b from-highlightPrimary to-blue-300"
+			class="absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform rounded-lg bg-gradient-to-b from-highlightPrimary to-blue-300 sm:block"
 		></div>
 
 		{#each filterExperiences() as exp, index (exp.title)}
@@ -46,14 +43,12 @@
 				class="relative mb-12 flex w-full items-center"
 				transition:fly={{ y: 20, duration: 300, delay: index * 100 }}
 			>
-				<!-- Timeline Dot -->
 				<div
-					class="absolute left-1/2 h-4 w-4 -translate-x-1/2 transform rounded-full border-4 border-white bg-highlightPrimary shadow-lg"
+					class="absolute left-1/2 hidden h-4 w-4 -translate-x-1/2 transform rounded-full border-4 border-white bg-highlightPrimary shadow-lg sm:block"
 				></div>
 
-				<!-- Experience Card -->
 				<div
-					class="relative w-[calc(50%-2rem)] rounded-xl border border-gray-300 bg-transparent p-6 shadow-lg backdrop-blur-md"
+					class="relative w-screen truncate text-wrap rounded-xl border border-gray-300 bg-transparent p-6 shadow-lg backdrop-blur-md transition-all duration-200 ease-in-out sm:w-[calc(50%-2rem)] sm:text-nowrap"
 					class:right={index % 2 === 1}
 					class:highlight={index === 0}
 					transition:fade

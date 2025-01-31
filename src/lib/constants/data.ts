@@ -3,6 +3,14 @@ import Email from '$lib/svelte-icons/Email.svelte';
 import Facebook from '$lib/svelte-icons/Facebook.svelte';
 import GitHub from '$lib/svelte-icons/GitHub.svelte';
 import LinkedIn from '$lib/svelte-icons/LinkedIn.svelte';
+import {
+	BuildingOfficeIcon,
+	HomeIcon,
+	IdentificationIcon,
+	InformationCircleIcon,
+	Square3Stack3dIcon,
+	WrenchIcon
+} from 'heroicons-svelte/24/outline';
 
 const classes = [
 	'absolute -top-4 lg:top-[-100px] left-[100px] sm:left-[180px] lg:left-[100px]',
@@ -12,29 +20,18 @@ const classes = [
 	'absolute bottom-0 sm:bottom-[-150px] sm:left-[150px] right-0 sm:right-[250px]',
 	'absolute bottom-0 sm:bottom-[-70px] right-0 sm:right-[220px]',
 	'absolute bottom-12 sm:bottom-[-70px] right-2 sm:right-[220px]',
-	'absolute bottom-5 sm:bottom-[-100px] right-20 sm:left-[180px]',
-	'absolute bottom-10 sm:bottom-[-150px] sm:left-[150px] right-5 sm:right-[250px]',
-	'absolute bottom-20 sm:bottom-[-70px] right-10 sm:right-[220px]'
+	'absolute bottom-5 sm:bottom-[-100px] right-20 sm:left-[180px]'
 ];
 
-export const iconSKills = [
-	'smile',
-	'robot',
-	'js',
-	'react',
-	'ts',
-	'svelte',
-	'nest',
-	'vue',
-	'nuxt',
-	'laravel'
-].map((name, index) => ({
-	src: `/images/${name}.gif`,
-	name,
-	class: classes[index],
-	width: index === 1 ? 100 : 70,
-	height: index === 1 ? 100 : 70
-}));
+export const iconSKills = ['js', 'react', 'ts', 'svelte', 'nest', 'vue', 'nuxt', 'laravel'].map(
+	(name, index) => ({
+		src: `/images/${name}.gif`,
+		name,
+		class: classes[index],
+		width: 70,
+		height: 70
+	})
+);
 
 export const iconContacts = [
 	{
@@ -73,3 +70,12 @@ export const PERSONAL_INFO = {
 		My strength lies in precision and meticulous execution. While I may not have exceptional skills in any single area, my deep sense of responsibility and relentless effort drive me forward.<br/>
 		I firmly believe that, with a combination of self-learning, specialized training, and mentorship, I can excel in my role and contribute meaningfully.`
 };
+
+export const speedDialActions = [
+	{ icon: IdentificationIcon, href: '#contacts' },
+	{ icon: Square3Stack3dIcon, href: '#projects' },
+	{ icon: WrenchIcon, href: '#skills' },
+	{ icon: BuildingOfficeIcon, href: '#experiences' },
+	{ icon: InformationCircleIcon, href: '#about-me' },
+	{ icon: HomeIcon, href: '#home' }
+];

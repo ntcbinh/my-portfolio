@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import AboutMe from './AboutMe.svelte';
 	import Education from './Education.svelte';
 	import Hobby from './Hobby.svelte';
@@ -26,7 +26,7 @@
 		<div class="mt-1 h-1 w-3/4 rounded-full bg-highlightColor"></div>
 	</div>
 
-	<div class="grid w-full grid-cols-1 gap-0 pt-10 lg:grid-cols-2 lg:gap-[25px] lg:pt-14">
+	<div class="grid w-full grid-cols-1 gap-0 space-y-10 pt-10 lg:grid-cols-2 lg:gap-[25px] lg:pt-14">
 		<div>
 			<img
 				alt="bn-hand"

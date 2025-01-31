@@ -1,16 +1,17 @@
 <script lang="ts">
-	import { HomeIcon } from 'heroicons-svelte/24/solid';
 	import '../app.css';
-	import { smoothScroll } from '$lib/utils/dom-process';
+	import SpeedDial from '$lib/components/atoms/menu/SpeedDial.svelte';
 	let { children } = $props();
 </script>
 
 <div
-	class="smooth-scroll flex min-h-screen items-center justify-center overflow-y-auto overflow-x-hidden bg-black text-white"
+	class="smooth-scroll flex min-h-screen w-screen items-center justify-center overflow-y-auto overflow-x-hidden bg-black text-white"
 >
-	<div class="fixed inset-0 h-full bg-gradient-to-br from-blue-900 via-black to-gray-900"></div>
+	<div
+		class="fixed inset-0 h-full w-screen bg-gradient-to-br from-blue-900 via-black to-gray-900"
+	></div>
 
-	<div class="absolute inset-0">
+	<div class="absolute inset-0 w-full">
 		<div
 			class="left-1/5 absolute top-1/3 h-96 w-96 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 opacity-30 blur-3xl"
 		></div>
@@ -22,14 +23,8 @@
 		></div>
 	</div>
 
-	<div class="relative z-10 h-full p-10">
+	<div class="relative z-10 h-full w-full p-4 sm:p-10">
 		{@render children()}
 	</div>
-	<a
-		href="#home"
-		class="fixed bottom-5 right-5 z-20 h-fit w-fit animate-pulse cursor-pointer hover:opacity-80"
-		use:smoothScroll
-	>
-		<HomeIcon class="h-10 w-10 text-white" />
-	</a>
+	<SpeedDial />
 </div>

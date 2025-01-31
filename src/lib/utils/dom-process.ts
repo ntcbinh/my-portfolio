@@ -10,3 +10,26 @@ export function smoothScroll(node: HTMLAnchorElement) {
 		}
 	});
 }
+export function clickOutSide(node: HTMLElement) {
+	interface ClickOutsideDetail {
+		target: EventTarget | null;
+		node: HTMLElement;
+	}
+
+	const handleClick = (event: MouseEvent) => {
+		if (node && !node.contains(event.target as Node) && !event.defaultPrevented) {
+			node.dispatchEvent(
+				new CustomEvent<ClickOutsideDetail>('click_outside', {
+					detail: { target: event.target, node }
+				})
+			);
+		}
+	};
+	document.addEventListener('click', handleClick, true);
+
+	return {
+		destroy() {
+			document.removeEventListener('click', handleClick, true);
+		}
+	};
+}
