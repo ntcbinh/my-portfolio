@@ -18,6 +18,7 @@ export default {
 				darkTextColor: '#D9EEFF',
 				highlightColor: '#A576E3',
 				highlightPrimary: '#04B5DD',
+				highlightYellow: '#CA8A04',
 				borderColor: '#E9E9E9'
 			}
 		}
