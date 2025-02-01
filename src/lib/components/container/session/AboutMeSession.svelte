@@ -32,7 +32,7 @@
 			<img
 				alt="bn-hand"
 				src="/images/hand.jpg"
-				class="h-full max-h-[460px] min-h-[460px] w-full rounded-md object-center"
+				class="h-full max-h-[460px] min-h-[460px] w-full rounded-md object-contain"
 			/>
 		</InView>
 

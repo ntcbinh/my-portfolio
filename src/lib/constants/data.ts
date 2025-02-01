@@ -79,3 +79,40 @@ export const navItems = [
 	{ icon: InformationCircleIcon, label: 'About Me', href: '#about-me' },
 	{ icon: HomeIcon, label: 'Home', href: '#home' }
 ];
+
+export const skillsText = [
+	['React', 'Next', 'Frontend Development', 'Vite', 'TypeScript'],
+	['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Styled Components'],
+	['React Query', 'React Hook Form', 'Formik', 'Storybook', 'Bootstrap'],
+	['REST API', 'React Testing Library', 'Vitest', 'Jest', 'Playwright']
+];
+
+export const categorizedSkills = {
+	'Frameworks and Libraries': [
+		'React.js',
+		'Next.js',
+		'Vite.js',
+		'Svelte',
+		'Nest',
+		'Vue',
+		'Nuxt',
+		'Laravel'
+	],
+	Miscellaneous: ['Frontend Development', 'Backend Development', 'Storybook'],
+	'Core Technologies': ['TypeScript', 'HTML5', 'CSS3', 'JavaScript', 'Node'],
+	'Styling and Design': [
+		'Tailwind Css',
+		'Styled Components',
+		'Material-UI',
+		'Bootstrap',
+		'Chakra UI',
+		'Vuetify'
+	],
+	'State Management': ['Redux Toolkit', 'Redux Thunk', 'TanStack Query'],
+	Forms: ['React Hook Form', 'Formik', 'SuperForms'],
+	Testing: ['React Testing Library', 'Vitest', 'Jest', 'Playwright'],
+	'APIs and Data Handling': ['REST API', 'GraphQL', 'Axios', 'Typeorm'],
+	'Build Tools and Workflow': ['CLI', 'Git', 'Bitbucket', 'CI/CD', 'GitHub Actions'],
+	'Version Control and Collaboration': ['Git', 'Bitbucket', 'GitHub'],
+	'Other Tools': ['VS Code', 'DBeaver', 'WebStorm', 'Figma', 'Postman', 'Jira', 'Confluence']
+};

@@ -12,4 +12,47 @@
 	.button-gradient-primary {
 		@apply rounded-md bg-gradient-to-r from-highlightPrimary to-highlightColor px-4 py-2 text-white transition duration-300 hover:from-highlightColor hover:to-highlightPrimary;
 	}
+
+	.scroll-wrapper {
+		@apply relative flex w-full overflow-hidden whitespace-nowrap;
+	}
+
+	.scroll-content {
+		@apply flex min-w-max gap-2;
+		animation-duration: 30s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-play-state: running;
+		transition: animation-play-state 0.3s ease-in-out;
+	}
+
+	.scroll-wrapper:hover .scroll-content {
+		animation-play-state: paused;
+	}
+
+	.scroll-left {
+		animation-name: scroll-left;
+	}
+
+	.scroll-right {
+		animation-name: scroll-right;
+	}
+
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-33.33%);
+		}
+	}
+
+	@keyframes scroll-right {
+		from {
+			transform: translateX(-33.33%);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
 }
