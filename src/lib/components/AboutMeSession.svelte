@@ -3,6 +3,7 @@
 	import AboutMe from './AboutMe.svelte';
 	import Education from './Education.svelte';
 	import Hobby from './Hobby.svelte';
+	import InView from './atoms/InView.svelte';
 
 	let tabs = ['about_me', 'education', 'hobby'];
 	let activeTab = 'about_me';
@@ -20,22 +21,22 @@
 	id="about-me"
 	class="flex min-h-screen flex-col justify-center pt-16 transition-all duration-500 lg:pt-8"
 >
-	<div class="mx-auto flex w-max flex-col items-end">
+	<InView from="left" class="mx-auto flex w-max flex-col items-end">
 		<h4 class="text-center text-[2.2rem] font-[600] text-darkTextColor">About Me</h4>
 		<div class="h-0.5 w-1/2 rounded-full bg-highlightPrimary"></div>
 		<div class="mt-1 h-1 w-3/4 rounded-full bg-highlightColor"></div>
-	</div>
+	</InView>
 
 	<div class="grid w-full grid-cols-1 gap-0 space-y-10 pt-10 lg:grid-cols-2 lg:gap-[25px] lg:pt-14">
-		<div>
+		<InView from="bottom">
 			<img
 				alt="bn-hand"
 				src="/images/hand.jpg"
 				class="h-full max-h-[460px] min-h-[460px] w-full rounded-md object-center"
 			/>
-		</div>
+		</InView>
 
-		<div>
+		<InView from="top">
 			<div class="relative grid w-full grid-cols-3 rounded-full border border-darkTextColor/40">
 				<div
 					class="absolute top-[50%] h-[90%] w-[33%] translate-y-[-50%] transform rounded-full bg-highlightPrimary/50 transition-all duration-700 sm:h-[85%] {activeTab ===
@@ -87,7 +88,7 @@
 					</div>
 				{/if}
 			</div>
-		</div>
+		</InView>
 	</div>
 </div>
 

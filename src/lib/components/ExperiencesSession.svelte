@@ -1,6 +1,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import experiences from '../data/experience.json';
+	import InView from './atoms/InView.svelte';
 
 	let selectedCategory = 'All';
 
@@ -41,36 +42,41 @@
 		{#each filterExperiences() as exp, index (exp.title)}
 			<div
 				class="relative mb-12 flex w-full items-center"
-				transition:fly={{ y: 20, duration: 300, delay: index * 100 }}
+				transition:fly={{ y: 20, duration: 300, delay: index * 10 }}
 			>
 				<div
 					class="absolute left-1/2 hidden h-4 w-4 -translate-x-1/2 transform rounded-full border-4 border-white bg-highlightPrimary shadow-lg sm:block"
 				></div>
 
 				<div
-					class="relative w-screen truncate text-wrap rounded-xl border border-gray-300 bg-transparent p-6 shadow-lg backdrop-blur-md transition-all duration-200 ease-in-out sm:w-[calc(50%-2rem)] sm:text-nowrap"
+					class="relative w-full sm:w-[calc(50%-2rem)]"
 					class:right={index % 2 === 1}
 					class:highlight={index === 0}
 					transition:fade
 				>
-					<h2 class="text-xl font-bold text-highlightPrimary">{exp.title}</h2>
-					<p class="text-gray-300">
-						{exp.company} | <span class="text-sm">{exp.duration}</span>
-					</p>
-					<p class="text-sm text-gray-500">Team Size: {exp.teamSize}</p>
+					<InView
+						from={index % 2 === 1 ? 'right' : 'left'}
+						class="w-full truncate text-wrap rounded-xl border border-gray-300 bg-transparent p-6 shadow-lg backdrop-blur-md transition-all duration-200 ease-in-out sm:text-nowrap "
+					>
+						<h2 class="text-xl font-bold text-highlightPrimary">{exp.title}</h2>
+						<p class="text-gray-300">
+							{exp.company} | <span class="text-sm">{exp.duration}</span>
+						</p>
+						<p class="text-sm text-gray-500">Team Size: {exp.teamSize}</p>
 
-					<h3 class="mt-3 text-sm font-semibold">Responsibilities:</h3>
-					<ul class="list-disc pl-5 text-sm text-gray-300">
-						{#each exp.responsibilities as responsibility}
-							<li>{responsibility}</li>
-						{/each}
-					</ul>
+						<h3 class="mt-3 text-sm font-semibold">Responsibilities:</h3>
+						<ul class="list-disc pl-5 text-sm text-gray-300">
+							{#each exp.responsibilities as responsibility}
+								<li>{responsibility}</li>
+							{/each}
+						</ul>
 
-					<h3 class="mt-3 text-sm font-semibold">Technologies:</h3>
-					<p class="text-sm text-gray-300">{exp.technologies.join(', ')}</p>
+						<h3 class="mt-3 text-sm font-semibold">Technologies:</h3>
+						<p class="text-sm text-gray-300">{exp.technologies.join(', ')}</p>
 
-					<h3 class="mt-3 text-sm font-semibold">Tools:</h3>
-					<p class="text-sm text-gray-300">{exp.tools.join(', ')}</p>
+						<h3 class="mt-3 text-sm font-semibold">Tools:</h3>
+						<p class="text-sm text-gray-300">{exp.tools.join(', ')}</p>
+					</InView>
 				</div>
 			</div>
 		{/each}

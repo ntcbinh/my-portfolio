@@ -5,6 +5,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { CalendarDaysIcon } from 'heroicons-svelte/24/solid';
 	import { smoothScroll } from '$lib/utils/dom-process';
+	import InView from './atoms/InView.svelte';
 
 	let currentIcon: (typeof iconSKills)[0] = iconSKills[0];
 	let intervalId: number | null = null;
@@ -31,8 +32,7 @@
 	id="home"
 	class="relative flex min-h-screen flex-col items-center justify-between gap-12 transition-all duration-500 sm:gap-16 lg:flex-row lg:gap-0"
 >
-	<!-- Intro -->
-	<div class="relative w-full pt-12 lg:w-[60%] lg:pt-0">
+	<InView from="left" class="relative w-full pt-12 lg:w-[60%] lg:pt-0">
 		<p class="text-[1.5rem] font-[500] text-darkDisableColor">
 			Hi, I'm {PERSONAL_INFO.NAME}
 		</p>
@@ -60,9 +60,10 @@
 				<img alt={icon.name} {...icon} />
 			{/if}
 		{/each}
-	</div>
+	</InView>
 
-	<div
+	<InView
+		from="right"
 		class="relative flex w-[80%] flex-col items-end sm:w-[90%] sm:items-center lg:w-[40%] lg:items-end"
 	>
 		<div
@@ -99,5 +100,5 @@
 			src="/images/bn.png"
 			class="w-96 border-collapse rounded-full border border-double border-green-700 bg-contain"
 		/>
-	</div>
+	</InView>
 </div>
