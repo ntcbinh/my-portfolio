@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { iconContacts } from '$lib/constants/data';
-	import PERSONAL_INFO from '../data/personal-info.json';
+	import PERSONAL_INFO from '../../../../data/personal-info.json';
 </script>
 
 <div class="whitespace-pre-line">

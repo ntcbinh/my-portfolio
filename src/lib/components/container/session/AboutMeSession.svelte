@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import AboutMe from './AboutMe.svelte';
-	import Education from './Education.svelte';
-	import Hobby from './Hobby.svelte';
-	import InView from './atoms/InView.svelte';
+	import AboutMe from './about-me/AboutMe.svelte';
+	import InView from '../../atoms/with-transition/InView.svelte';
+	import Education from './about-me/Education.svelte';
+	import Hobby from './about-me/Hobby.svelte';
 
 	let tabs = ['about_me', 'education', 'hobby'];
 	let activeTab = 'about_me';
@@ -28,7 +28,7 @@
 	</InView>
 
 	<div class="grid w-full grid-cols-1 gap-0 space-y-10 pt-10 lg:grid-cols-2 lg:gap-[25px] lg:pt-14">
-		<InView from="bottom">
+		<InView from="bottom" threshold={0.5}>
 			<img
 				alt="bn-hand"
 				src="/images/hand.jpg"
@@ -36,7 +36,7 @@
 			/>
 		</InView>
 
-		<InView from="top">
+		<InView from="top" threshold={0.5}>
 			<div class="relative grid w-full grid-cols-3 rounded-full border border-darkTextColor/40">
 				<div
 					class="absolute top-[50%] h-[90%] w-[33%] translate-y-[-50%] transform rounded-full bg-highlightPrimary/50 transition-all duration-700 sm:h-[85%] {activeTab ===

@@ -2,12 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.button-fill {
-	@apply flex items-center gap-2 rounded-md bg-darkTextColor px-4 py-2 text-slate-800 transition duration-300 hover:bg-darkTextColor hover:bg-textColor/90 hover:text-white;
-}
-.button-outline {
-	@apply flex items-center gap-2 rounded-md border border-darkTextColor px-4 py-2 text-darkTextColor transition duration-300 hover:bg-slate-800;
-}
-.button-gradient-primary {
-	@apply rounded-md bg-gradient-to-r from-highlightPrimary to-highlightColor px-4 py-2 text-white transition duration-300 hover:from-highlightColor hover:to-highlightPrimary;
+@layer utilities {
+	.button-fill {
+		@apply flex items-center gap-2 rounded-md bg-darkTextColor px-4 py-2 text-slate-800 transition duration-300 hover:bg-darkTextColor hover:bg-textColor/90 hover:text-white;
+	}
+	.button-outline {
+		@apply flex items-center gap-2 rounded-md border border-darkTextColor px-4 py-2 text-darkTextColor transition duration-300 hover:bg-slate-800;
+	}
+	.button-gradient-primary {
+		@apply rounded-md bg-gradient-to-r from-highlightPrimary to-highlightColor px-4 py-2 text-white transition duration-300 hover:from-highlightColor hover:to-highlightPrimary;
+	}
 }

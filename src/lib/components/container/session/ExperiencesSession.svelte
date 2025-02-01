@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { fade, fly } from 'svelte/transition';
-	import experiences from '../data/experience.json';
-	import InView from './atoms/InView.svelte';
+	import experiences from '../../../data/experience.json';
+	import InView from '../../atoms/with-transition/InView.svelte';
 
 	let selectedCategory = 'All';
+	let experiencesContainer: HTMLDivElement;
 
 	const categories = ['All', ...new Set(experiences.map((exp) => exp.category))];
 
@@ -12,22 +13,31 @@
 			? experiences
 			: experiences.filter((exp) => exp.category === selectedCategory);
 	}
+
+	function handleFilterClick(category: string) {
+		selectedCategory = category;
+		experiencesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	}
 </script>
 
-<div id="experiences" class="min-h-screen w-full bg-transparent p-8 text-white">
+<div
+	id="experiences"
+	class="min-h-screen w-full bg-transparent p-8 text-white"
+	bind:this={experiencesContainer}
+>
 	<div class="mx-auto mb-10 flex w-max flex-col items-end">
 		<h4 class="text-center text-[2.2rem] font-[600] text-darkTextColor">Experiences</h4>
 		<div class="h-0.5 w-1/2 rounded-full bg-highlightPrimary"></div>
 		<div class="mt-1 h-1 w-3/4 rounded-full bg-highlightColor"></div>
 	</div>
 
-	<div class="mb-10 flex justify-center space-x-4">
+	<div class="mb-10 flex justify-center space-x-1 sm:space-x-4">
 		{#each categories as category}
 			<button
-				class="rounded-full border border-gray-400 px-5 py-2.5 text-gray-300 shadow-lg transition
-          duration-300 hover:bg-highlightPrimary/50 hover:text-white"
+				class="text-nowrap rounded-full border border-gray-400 px-5 py-0 text-gray-300 shadow-lg transition
+		  duration-300 hover:bg-highlightPrimary/50 hover:text-white sm:py-2.5"
 				class:selected={selectedCategory === category}
-				on:click={() => (selectedCategory = category)}
+				on:click={() => handleFilterClick(category)}
 			>
 				{category}
 			</button>

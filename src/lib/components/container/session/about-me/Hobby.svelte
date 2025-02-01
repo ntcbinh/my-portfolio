@@ -1,5 +1,5 @@
 <script>
-	import hobbies from '../data/hobbies.json';
+	import hobbies from '../../../../data/hobbies.json';
 </script>
 
 <section>

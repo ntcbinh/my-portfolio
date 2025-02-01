@@ -71,11 +71,11 @@ export const PERSONAL_INFO = {
 		I firmly believe that, with a combination of self-learning, specialized training, and mentorship, I can excel in my role and contribute meaningfully.`
 };
 
-export const speedDialActions = [
-	{ icon: IdentificationIcon, href: '#contacts' },
-	{ icon: Square3Stack3dIcon, href: '#projects' },
-	{ icon: WrenchIcon, href: '#skills' },
-	{ icon: BuildingOfficeIcon, href: '#experiences' },
-	{ icon: InformationCircleIcon, href: '#about-me' },
-	{ icon: HomeIcon, href: '#home' }
+export const navItems = [
+	{ icon: IdentificationIcon, label: 'Contacts', href: '#contacts' },
+	{ icon: Square3Stack3dIcon, label: 'Projects', href: '#projects' },
+	{ icon: WrenchIcon, label: 'Skills', href: '#skills' },
+	{ icon: BuildingOfficeIcon, label: 'Experiences', href: '#experiences' },
+	{ icon: InformationCircleIcon, label: 'About Me', href: '#about-me' },
+	{ icon: HomeIcon, label: 'Home', href: '#home' }
 ];

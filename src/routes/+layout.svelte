@@ -1,11 +1,13 @@
 <script lang="ts">
 	import '../app.css';
 	import SpeedDial from '$lib/components/atoms/menu/SpeedDial.svelte';
+	import Breadcrumb from '$lib/components/atoms/navigation/Breadcrumb.svelte';
+
 	let { children } = $props();
 </script>
 
 <div
-	class="smooth-scroll flex min-h-screen w-screen items-center justify-center overflow-y-auto overflow-x-hidden bg-black text-white"
+	class="smooth-scroll relative flex min-h-screen w-screen items-center justify-center overflow-y-auto overflow-x-hidden bg-black text-white"
 >
 	<div
 		class="fixed inset-0 h-full w-screen bg-gradient-to-br from-blue-900 via-black to-gray-900"
@@ -23,7 +25,9 @@
 		></div>
 	</div>
 
-	<div class="relative z-10 h-full w-full p-4 sm:p-10">
+	<Breadcrumb />
+
+	<div class="relative z-10 ml-auto h-full w-full p-4 sm:w-[calc(100%-2.5rem)] sm:p-10">
 		{@render children()}
 	</div>
 	<SpeedDial />

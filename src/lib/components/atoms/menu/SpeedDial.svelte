@@ -2,7 +2,7 @@
 	import AnchorButton from './AnchorButton.svelte';
 	import { clickOutSide } from '$lib/utils/dom-process';
 	import { getSpeedDialPosition } from '$lib/utils/helpers';
-	import { speedDialActions } from '$lib/constants/data';
+	import { navItems as speedDialActions } from '$lib/constants/data';
 
 	let isOpen = false;
 
