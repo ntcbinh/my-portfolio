@@ -9,7 +9,7 @@
 
 <div
 	id="skills"
-	class="mt-0 flex min-h-screen flex-col items-center justify-start px-6 py-16 text-white sm:mt-[50vh]"
+	class="mt-0 flex min-h-screen flex-col items-center justify-center px-6 py-16 text-white sm:mt-[50vh]"
 >
 	<InView from="right" class="mx-auto flex w-max flex-col items-end">
 		<h4 class="text-center text-[2.2rem] font-semibold text-darkTextColor">Skills</h4>

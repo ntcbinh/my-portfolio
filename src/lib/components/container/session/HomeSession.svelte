@@ -3,8 +3,6 @@
 	import { iconSKills } from '$lib/constants/data';
 	import PERSONAL_INFO from '../../../data/personal-info.json';
 	import { onMount, onDestroy } from 'svelte';
-	import { CalendarDaysIcon } from 'heroicons-svelte/24/solid';
-	import { smoothScroll } from '$lib/utils/dom-process';
 	import InView from '../../atoms/with-transition/InView.svelte';
 
 	let currentIcon: (typeof iconSKills)[0] = iconSKills[0];
@@ -46,15 +44,7 @@
 		<p class="mt-2 w-full text-[1rem] text-darkDisableColor sm:w-[70%]">
 			{PERSONAL_INFO.DESCRIPTION}
 		</p>
-		<div class="mt-8 flex flex-col gap-[15px] sm:flex-row sm:items-center">
-			<a href="#discuss" target="_blank" class="button-fill w-max py-2.5">
-				<CalendarDaysIcon class="mr-1 h-5 w-5" />
-				Set up a meeting with me
-			</a>
-			<a href="#about-me" class="button-outline w-max py-2.5" use:smoothScroll> About Me </a>
-		</div>
 
-		<!-- Animated icons -->
 		{#each iconSKills as icon (icon.name)}
 			{#if currentIcon?.name === icon.name}
 				<img alt={icon.name} {...icon} />

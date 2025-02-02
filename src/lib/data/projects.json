@@ -1,0 +1,150 @@
+{
+	"Healthy Care": {
+		"href": "https://healthy-ntcbinh.netlify.app/top-page",
+		"description": [
+			{ "name": "JavaScript", "percentage": 63.7, "color": "#f1e05a" },
+			{ "name": "CSS", "percentage": 34.7, "color": "#563d7c" },
+			{ "name": "HTML", "percentage": 1.6, "color": "#e34c26" }
+		]
+	},
+	"Portfolio": {
+		"href": "https://ntcbinh16.netlify.app",
+		"description": [
+			{
+				"name": "Svelte",
+				"percentage": 71.4,
+				"color": "#FF3E00"
+			},
+			{
+				"name": "TypeScript",
+				"percentage": 19.5,
+				"color": "#3178C6"
+			},
+			{
+				"name": "JavaScript",
+				"percentage": 4.1,
+				"color": "#F7DF1E"
+			},
+			{
+				"name": "CSS",
+				"percentage": 3.9,
+				"color": "#563D7C"
+			},
+			{
+				"name": "HTML",
+				"percentage": 1.1,
+				"color": "#E34C26"
+			}
+		]
+	},
+	"Task Client": {
+		"href": "https://task-client-auth-mockup.netlify.app",
+		"description": [
+			{
+				"name": "Vue",
+				"percentage": 69.7,
+				"color": "#42b883"
+			},
+			{
+				"name": "TypeScript",
+				"percentage": 14.0,
+				"color": "#3178c6"
+			},
+			{
+				"name": "SCSS",
+				"percentage": 13.5,
+				"color": "#c6538c"
+			},
+			{
+				"name": "JavaScript",
+				"percentage": 2.0,
+				"color": "#f7df1e"
+			},
+			{
+				"name": "HTML",
+				"percentage": 0.8,
+				"color": "#e34c26"
+			}
+		]
+	},
+	"Product Card": {
+		"href": "https://challenge-product-card.netlify.app",
+		"description": [
+			{
+				"name": "Vue",
+				"percentage": 76.1,
+				"color": "#42b883"
+			},
+			{
+				"name": "CSS",
+				"percentage": 16.7,
+				"color": "#563d7c"
+			},
+			{
+				"name": "TypeScript",
+				"percentage": 2.8,
+				"color": "#3178c6"
+			},
+			{
+				"name": "JavaScript",
+				"percentage": 2.2,
+				"color": "#f7df1e"
+			},
+			{
+				"name": "HTML",
+				"percentage": 2.2,
+				"color": "#e34c26"
+			}
+		]
+	},
+	"Creative Tim": {
+		"href": "https://ntcbinh.netlify.app",
+		"description": [
+			{ "name": "JavaScript", "percentage": 61.0, "color": "#f1e05a" },
+			{ "name": "CSS", "percentage": 34.2, "color": "#563d7c" },
+			{ "name": "HTML", "percentage": 4.8, "color": "#e34c26" }
+		]
+	},
+	"Rock Paper Scissors": {
+		"href": "https://bin-rock-paper-scissors.netlify.app",
+		"description": [
+			{
+				"name": "SCSS",
+				"percentage": 53.7,
+				"color": "#c6538c"
+			},
+			{
+				"name": "Vue",
+				"percentage": 39.1,
+				"color": "#42b883"
+			},
+			{
+				"name": "TypeScript",
+				"percentage": 2.8,
+				"color": "#3178c6"
+			},
+			{
+				"name": "JavaScript",
+				"percentage": 2.2,
+				"color": "#f7df1e"
+			},
+			{
+				"name": "HTML",
+				"percentage": 2.2,
+				"color": "#e34c26"
+			}
+		]
+	},
+	"Libi Shop": {
+		"href": "https://libishop.netlify.app",
+		"description": [
+			{ "name": "JavaScript", "percentage": 77.8, "color": "#f1e05a" },
+			{
+				"name": "SCSS",
+				"percentage": 17.9,
+				"color": "#c6538c"
+			},
+			{ "name": "HTML", "percentage": 4.3, "color": "#e34c26" }
+		]
+	}
+}

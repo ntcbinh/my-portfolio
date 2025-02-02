@@ -10,7 +10,7 @@
 		@apply flex items-center gap-2 rounded-md border border-darkTextColor px-4 py-2 text-darkTextColor transition duration-300 hover:bg-slate-800;
 	}
 	.button-gradient-primary {
-		@apply rounded-md bg-gradient-to-r from-highlightPrimary to-highlightColor px-4 py-2 text-white transition duration-300 hover:from-highlightColor hover:to-highlightPrimary;
+		@apply rounded-md bg-gradient-to-r from-highlightPrimary to-highlightColor px-4 py-2 text-white transition-all duration-300 ease-linear hover:from-highlightColor hover:to-highlightPrimary;
 	}
 
 	.scroll-wrapper {

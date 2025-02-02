@@ -18,3 +18,19 @@ export function getSpeedDialPosition(index: number, actions: unknown[]) {
 	const y = Math.sin(radian) * radius;
 	return { x, y };
 }
+
+export function camelToKebab(str: string) {
+	return str
+		.replace(/([a-z])([A-Z])/g, '$1-$2')
+		.replaceAll(' ', '-')
+		.toLowerCase();
+}
+
+export function downloadPDF(fileUrl: string, fileName: string) {
+	const link = document.createElement('a');
+	link.href = fileUrl;
+	link.download = fileName;
+	document.body.appendChild(link);
+	link.click();
+	document.body.removeChild(link);
+}

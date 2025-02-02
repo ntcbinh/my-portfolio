@@ -99,20 +99,22 @@ export const categorizedSkills = {
 		'Laravel'
 	],
 	Miscellaneous: ['Frontend Development', 'Backend Development', 'Storybook'],
-	'Core Technologies': ['TypeScript', 'HTML5', 'CSS3', 'JavaScript', 'Node'],
+	'Core Technologies': ['TypeScript', 'HTML5', 'CSS3', 'JavaScript', 'Node', 'PHP'],
 	'Styling and Design': [
 		'Tailwind Css',
 		'Styled Components',
 		'Material-UI',
 		'Bootstrap',
 		'Chakra UI',
-		'Vuetify'
+		'Vuetify',
+		'Ant Design',
+		'BitsUI'
 	],
 	'State Management': ['Redux Toolkit', 'Redux Thunk', 'TanStack Query'],
 	Forms: ['React Hook Form', 'Formik', 'SuperForms'],
 	Testing: ['React Testing Library', 'Vitest', 'Jest', 'Playwright'],
 	'APIs and Data Handling': ['REST API', 'GraphQL', 'Axios', 'Typeorm'],
 	'Build Tools and Workflow': ['CLI', 'Git', 'Bitbucket', 'CI/CD', 'GitHub Actions'],
-	'Version Control and Collaboration': ['Git', 'Bitbucket', 'GitHub'],
+	'Version Control': ['Git', 'Bitbucket', 'GitHub'],
 	'Other Tools': ['VS Code', 'DBeaver', 'WebStorm', 'Figma', 'Postman', 'Jira', 'Confluence']
 };

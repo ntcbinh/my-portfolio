@@ -1,5 +1,6 @@
 <script>
 	import { navItems as items } from '$lib/constants/data';
+	import { smoothScroll } from '$lib/utils/dom-process';
 </script>
 
 <nav
@@ -12,6 +13,7 @@
 			<a
 				href={item.href}
 				class="flex items-center justify-center rounded-full p-2 transition hover:scale-150"
+				use:smoothScroll
 			>
 				<svelte:component this={item.icon} class="h-6 w-6" />
 			</a>
