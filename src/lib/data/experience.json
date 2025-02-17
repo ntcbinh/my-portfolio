@@ -1,12 +1,12 @@
 [
 	{
-		"title": "Senior Frontend Engineer",
+		"title": "Senior Software Engineer",
 		"company": "Sungrove Tech Vietnam",
 		"duration": "2024/2 - Present",
 		"teamSize": 20,
 		"category": "Frontend",
 		"responsibilities": ["Coding", "Writing Unit test code", "Review source code"],
-		"technologies": ["Svelte", "TypeScript", "Docker", "TailwindCSS"],
+		"technologies": ["Svelte", "TypeScript", "Docker", "MySQL", "Nest", "TailwindCSS"],
 		"tools": ["Backlog", "VSCode", "Bitbucket", "Jira"]
 	},
 	{
