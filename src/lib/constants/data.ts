@@ -9,8 +9,10 @@ import {
 	IdentificationIcon,
 	InformationCircleIcon,
 	Square3Stack3dIcon,
-	WrenchIcon
+	WrenchIcon,
+	UserPlusIcon
 } from 'heroicons-svelte/24/outline';
+import { ROUTES } from './routes.constant';
 
 const classes = [
 	'absolute -top-4 lg:top-[-100px] left-[100px] sm:left-[180px] lg:left-[100px]',
@@ -72,12 +74,13 @@ export const PERSONAL_INFO = {
 };
 
 export const navItems = [
-	{ icon: IdentificationIcon, label: 'Contacts', href: '#contacts' },
-	{ icon: Square3Stack3dIcon, label: 'Projects', href: '#projects' },
-	{ icon: WrenchIcon, label: 'Skills', href: '#skills' },
-	{ icon: BuildingOfficeIcon, label: 'Experiences', href: '#experiences' },
-	{ icon: InformationCircleIcon, label: 'About Me', href: '#about-me' },
-	{ icon: HomeIcon, label: 'Home', href: '#home' }
+	{ icon: UserPlusIcon, label: 'Admin Setting', href: ROUTES.ADMIN_DASHBOARD},
+	{ icon: IdentificationIcon, label: 'Contacts', href: ROUTES.CONTACTS },
+	{ icon: Square3Stack3dIcon, label: 'Projects', href: ROUTES.PROJECTS },
+	{ icon: WrenchIcon, label: 'Skills', href: ROUTES.SKILLS },
+	{ icon: BuildingOfficeIcon, label: 'Experiences', href: ROUTES.EXPERIENCES },
+	{ icon: InformationCircleIcon, label: 'About Me', href: ROUTES.ABOUT_ME },
+	{ icon: HomeIcon, label: 'Home', href: ROUTES.HOME }
 ];
 
 export const skillsText = [
