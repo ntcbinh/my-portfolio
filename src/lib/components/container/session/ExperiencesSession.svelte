@@ -82,7 +82,7 @@
 						</ul>
 
 						<h3 class="mt-3 text-sm font-semibold">Technologies:</h3>
-						<p class="text-sm text-gray-300">{exp.technologies.join(', ')}</p>
+						<p class="text-sm text-gray-300 max-w-full text-wrap">{exp.technologies.join(', ')}</p>
 
 						<h3 class="mt-3 text-sm font-semibold">Tools:</h3>
 						<p class="text-sm text-gray-300">{exp.tools.join(', ')}</p>

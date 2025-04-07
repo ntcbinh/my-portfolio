@@ -6,7 +6,7 @@
 	import InView from '../../atoms/with-transition/InView.svelte';
 
 	let currentIcon: (typeof iconSKills)[0] = iconSKills[0];
-	let intervalId: number | null = null;
+	let intervalId: NodeJS.Timeout | null= null;
 
 	const startIconAnimation = () => {
 		currentIcon = getRandomIcon(currentIcon);
