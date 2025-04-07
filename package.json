@@ -38,6 +38,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"firebase": "^11.6.0",
 		"heroicons-svelte": "^2.0.2"
 	}
 }

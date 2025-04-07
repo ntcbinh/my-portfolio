@@ -1,5 +1,5 @@
-export function smoothScroll(node: HTMLAnchorElement) {
-	node.addEventListener('click', (e: MouseEvent) => {
+export function smoothScroll(node: HTMLAnchorElement|HTMLButtonElement) {
+	node.addEventListener('click', (e) => {
 		e.preventDefault();
 		const targetId = node.getAttribute('href')?.slice(1);
 		if (targetId) {
