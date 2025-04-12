@@ -1,9 +1,17 @@
 <script lang="ts">
 	import '../app.css';
-	import SpeedDial from '$lib/components/atoms/menu/SpeedDial.svelte';
-	import Breadcrumb from '$lib/components/atoms/navigation/Breadcrumb.svelte';
+	import { onMount } from 'svelte';
+	import { auth } from '$lib/firebase/firebase';
+	import { authMiddleware } from '$lib/middleware/auth';
 
 	let { children } = $props();
+
+	onMount(() => {
+		const unsubscribe = auth.onAuthStateChanged(async () => {
+			await authMiddleware(window.location.pathname);
+		});
+		return unsubscribe;
+	});
 </script>
 
 <div
@@ -24,11 +32,7 @@
 			class="top-1/5 absolute right-1/3 h-80 w-80 rounded-full bg-gradient-to-r from-red-800 to-red-200 opacity-30 blur-2xl"
 		></div>
 	</div>
-
-	<Breadcrumb />
-
 	<div class="relative z-10 ml-auto h-full w-full p-4 sm:w-[calc(100%-2.5rem)] sm:p-10">
 		{@render children()}
 	</div>
-	<SpeedDial />
 </div>
